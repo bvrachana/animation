@@ -1,0 +1,151 @@
+.commonAnimation{
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px;
+    height: 300px;
+}
+.commonAnimation h1{
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 2px 5px 3px #1e1d1d;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+}
+.animation{
+    background-color: teal;
+    animation: myanimation 0.7s infinite alternate;
+}
+@keyframes myanimation{
+    from{
+        background-color: hsl(0, 7%, 62%);
+        border-radius: 0px;
+        border: 0px solid #000;
+        color: rgb(216, 253, 7);
+        transform: scale(0.9);
+    background: url("https://img.freepik.com/free-photo/data-technology-blue-background-with-hacker-remixed-media_53876-108534.jpg?w=996&t=st=1706511511~exp=1706512111~hmac=d412df49589a446aeedae55daebaea0d3525085bfeaaf47cad5617829bb05f09"); */
+    }
+    to{
+        background-color: red;
+        border-radius: 100px;
+        border: 10px solid #000;
+        color: #f5f5ea;
+        transform: scale(1);
+    }
+}
+/* example1.html */
+.battery{
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: #0c0c0c;
+    position: relative;
+    overflow: hidden;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.battery::before{
+    content: "";
+    width: 100%;
+    height: 1%;
+    background-color: #15ef11;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: charge 10s infinite;
+}
+@keyframes charge{
+    0%{
+        height: 1%;
+        background-color: #f00a0a;
+    }
+    10%{
+        height: 10%;
+        background-color: #f80909;
+    }
+    100%{
+        height: 100%;
+        background-color: #0ced10;
+    }
+}
+/* p2.html */
+.animation2{
+ animation: myAnimation2 5s infinite alternate;
+ width: 300px;
+ height: 300px;
+ border-radius: 100px;
+ background: url("https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062008.jpg?size=626&ext=jpg&ga=GA1.1.1325063738.1703091014&semt=ais") no-repeat center;
+ background-size: cover;
+}
+@keyframes myAnimation2{
+    0%{
+        background-position: left;
+        border-radius: 0%;
+    }
+    25%{
+        background-position: bottom;
+    }
+    50%{
+        background-position: right;
+    }
+    75%{
+        background-position: bottom;
+    }
+    100%{
+        background-position: center;
+        border-radius: 100%;
+    }
+}
+/* @keyframes bodyAnim{
+    from{
+        background: linear-gradient(0deg, red, purple);
+    }
+    to{
+        background: linear-gradient(360deg, #ec0124, #4203d3);
+    }
+} */
+/* p4.html */
+.animation3{
+    position: relative;
+    overflow: hidden;
+    background-color: #0c0c0c;
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    position: absolute;
+    animation: animation1 10s infinite alternate;
+    width: 100px;
+    height: 100px;
+}
+@keyframes animation1{
+    0%{
+        top: 0px;
+        left: 0px;
+        background: #fc466c;
+    }
+    25%{
+        top: 0px;
+        left: 600px;
+        background: #5246fc;
+    }
+    50%{
+        top: 400px;
+        left: 600px;
+        background: #fce146;
+    }
+    75%{
+        top: 400px;
+        left: 0px;
+        background: #5bd719;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background: #46c5fc;
+    }
+
+}

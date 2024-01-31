@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIRD</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: rgb(9, 9, 9);
+            /* animation: bird 1s alternate infinite; */
+        }
+         .card{
+        width: 500px;
+        height: 500px;
+        background-color: aliceblue;
+        position: relative;
+         left: 500px;
+         top: 100px;
+        } 
+      .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: black;
+            position: absolute;
+            right: 90px;
+            top: 90px;
+            z-index: 2;
+        }
+        .circle1{
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: aliceblue;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+        }
+        .circle2{
+            position: absolute;
+            width: 9px;
+            height: 6px;
+            background-color: black;
+            top: 10px;
+            border-radius: 100%;
+            left: 15px;
+            transform: rotate(-15deg);
+            
+        }
+        .cock{
+           position: absolute;
+            border-bottom: 34px solid rgb(252, 124, 4);
+           border-right: 17px solid transparent;
+           border-radius: 10px 2px ;
+           transform: rotate(100deg);
+          right: 75px;
+          top: 105px;
+        }
+        .protractor{
+            height: 70px;
+            background-color: gray;
+           width: 120px;
+           position: absolute;
+           top: 132px;
+           left: 210px;
+           transform: rotate(-12deg);
+           border-radius: 0 0 100px 100px;
+           z-index: 1;
+        }
+        .body{
+            width: 200px;
+            height: 140px;
+            border-radius: 100%;
+            background-color: rgb(249, 92, 13);
+            position:relative;
+            top: 130px;
+            left: 190px;
+           
+           
+        }
+        .feather{
+            border-top: 90px solid rgb(3, 3, 3);
+            border-left: 40px solid transparent;
+            left: -35px;
+            top: -17px;
+            
+            position: absolute;
+          transform: rotate(95deg);
+        }
+        .leg{
+          height: 23px;
+          width: 10px;
+          background-color: rgb(27, 122, 223);
+          position: absolute;
+          top: 130px;
+          left: 50px;
+          transform: rotate(50deg);
+          border-radius: 2px;
+        }
+        .leg1{
+            height: 50px;
+          width: 10px;
+          background-color: rgb(27, 122, 223);
+          position: absolute;
+          top: 13px;
+          left: 18px;
+          transform: rotate(-45deg); 
+          border-radius: 2px;
+
+        }
+        .leg2{
+            height: 30px;
+            width: 10px;
+            position: absolute;
+            background-color: rgb(27, 122, 223);
+            top:28px;
+            left: 45px;
+            transform: rotate(20deg);
+        }
+        .leg3{
+            height: 30px;
+            width: 10px;
+            position: absolute;
+            background-color: rgb(27, 122, 223);
+            top:50px;
+            left: 38px;
+           
+        }
+        .legs{
+          height: 23px;
+          width: 10px;
+          background-color: rgb(27, 122, 223);
+          position: absolute;
+          top: 130px;
+          left: 110px;
+          transform: rotate(50deg);
+          border-radius: 2px;
+        }
+        .legs1{
+            height: 50px;
+          width: 10px;
+          background-color: rgb(27, 122, 223);
+          position: absolute;
+          top: 13px;
+          left: 18px;
+          transform: rotate(-45deg); 
+          border-radius: 2px;
+        }
+        .legs2{
+            height: 30px;
+            width: 10px;
+            position: absolute;
+            background-color: rgb(27, 122, 223);
+            top:28px;
+            left: 45px;
+            transform: rotate(20deg);
+         }
+         .legs3{
+            height: 30px;
+            width: 10px;
+            position: absolute;
+            background-color: rgb(27, 122, 223);
+            top:50px;
+            left: 38px;
+           
+         }
+        .bird{
+            position: relative;
+            animation: bird 1s ease-in-out infinite alternate;
+         }
+        @keyframes bird{
+            from{
+                
+            }
+            to{
+                transform: translateY(-50px) translateX(50px);
+            }
+         }
+    </style>
+</head>
+<body>
+    <section class="card">
+       <section class="bird">
+    <div class="circle">
+        <div class="circle1">
+            <div class="circle2"></div>
+        </div>
+    </div>
+   <div class="cock"></div>
+       <div class="protractor"></div>
+       <div class="body">
+       <div class="feather"></div>
+       <div class="leg">
+        <div class="leg1"></div>
+            <div class="leg2"></div>
+            <div class="leg3"></div>
+        </div>
+        <div class="legs">
+            <div class="legs1"></div>
+            <div class="legs2"></div>
+            <div class="legs3"></div>
+        </div>
+     </div>
+    </section>
+ </section>
+</body>
+</html>

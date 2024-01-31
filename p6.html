@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: aliceblue;
+            position: relative;
+        }
+        .box::before{
+            content: "HELLO";
+            letter-spacing: 5px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            animation: anim 5s infinite;
+            position: absolute;
+        }
+        .box::after{
+            content: "";
+            letter-spacing: 5px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            animation: anim 1s infinite;
+            position: absolute;
+            animation: anim1 3s infinite;
+        }
+        @keyframes anim{
+            0%{
+                border-radius: 100%;
+           background-color: aqua;
+           transform: skew(0.8);
+            }
+            25%{
+                background-color: brown;
+            }
+            100%{
+                background-color: blue;
+                transform: skew(2);
+                border-radius: 100%;
+            }
+        }
+        @keyframes anim1{
+            0%{
+               
+           background-color: aqua;
+           transform: skew(0.8);
+            }
+            100%{
+                background-color: blue;
+                transform: skew(2);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="card">
+        <div class="box">
+            
+        </div>
+    </section>
+</body>
+</html>
